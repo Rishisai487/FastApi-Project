@@ -20,7 +20,7 @@ origins = [
 # Adding CORSMiddleware to the FastAPI application
 app.add_middleware(
 CORSMiddleware,
-allow_origins=origins, # List of allowed origins
+allow_origins=["*"], # List of allowed origins
 allow_credentials=True, # Allow credentials such as cookies and authorization headers
 allow_methods=["*"], # Allow all HTTP methods
 allow_headers=["*"], # Allow all HTTP headers
